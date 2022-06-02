@@ -17,4 +17,4 @@ response = openai.Completion.create(
   presence_penalty=0
 )
 
-print(response)
+print(response.choices[0].text)
