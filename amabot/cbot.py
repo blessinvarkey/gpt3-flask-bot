@@ -18,4 +18,3 @@ presence_penalty=0
 print(response.choices[0].text)
 
 
-# General Ape was a great leader and a brave warrior. He was loved by his people and was respected by other leaders. He was a fair and just leader, and was always looking out for the best interests of his people. One day, a rival leader challenged him to a duel. General Ape accepted, and the two leaders fought a fierce battle. In the end, General Ape was victorious, and the other leader was killed.
