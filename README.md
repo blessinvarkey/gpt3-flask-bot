@@ -10,4 +10,4 @@ This repository contains AI chat bot which uses autoregressive transformer langu
 
 - [amabot (AskMeAnything Bot)](https://github.com/blessinvarkey/gpt3-bot/tree/main/amabot)
 
-![](ape_nft.mov)
+![](ape_gpt3_story.mov)
