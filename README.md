@@ -1,6 +1,6 @@
 # gpt3-flask-bot
 
-This repository contains AI chat bot which uses autoregressive transformer language model GPT3 for interaction. 
+This repository contains AI chat bot which uses autoregressive transformer language model GPT3 for interaction. Interactions are saved in gpt3_logs.
 
 1. Openai Key (visit: openai to get your api key)
 2. Download the repository:
