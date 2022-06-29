@@ -4,9 +4,12 @@ This repository contains AI chat bot which uses autoregressive transformer langu
 
 1. Openai Key (visit: openai to get your api key)
 2. Download the repository:
-- git clone https://github.com/blessinvarkey/gpt3-bot.git
-- Create file openaiapikey.txt
-- install dependencies
+3. git clone https://github.com/blessinvarkey/gpt3-bot.git
+4. Create file openaiapikey.txt
+5. install dependencies
+6. run app.py 
+
+![bot](bot.png)
 
 
 
