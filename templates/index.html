@@ -8,7 +8,7 @@
         font-family: monospace;
       }
       h1 {
-        background-color: #8080ff;
+        background-color: #ce13c8;
         color: black;
         display: inline-block;
         font-size: 2em;
@@ -18,7 +18,7 @@
       #chatbox {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 55%;
         margin-top: 60px;
       }
       #userInput {
@@ -33,6 +33,7 @@
         border-bottom: 3px solid black;
         font-family: monospace;
         font-size: 17px;
+        margin-bottom: 10px;
       }
       .userText {
         color: black;
@@ -40,11 +41,14 @@
         font-size: 17px;
         text-align: right;
         line-height: 30px;
+        border-radius: 5px;
+        margin-top: 25px;
       }
       .userText span {
-        background-color: #e699ff;
+        background-color: #8cfff3;
         padding: 10px;
-        border-radius: 2px;
+        border-radius: 7px;
+        box-shadow: 8px 7px 6px 5px #888888;
       }
       .botText {
         color: black;
@@ -52,9 +56,11 @@
         font-size: 17px;
         text-align: left;
         line-height: 30px;
+        background-color: #ffffff ;
+        border-radius: 7px;
+        box-shadow: 8px 7px 6px 5px #888888;
       }
       .botText span {
-        background-color: #ffdd99;
         padding: 10px;
         border-radius: 2px;
       }
@@ -67,9 +73,10 @@
       .boxed {
         margin-left: auto;
         margin-right: auto;
-        width: 78%;
+        width: 70%;
         margin-top: 60px;
         border: 1px solid green;
+        background-color: #f7f4b2;
       }
       .box {
         border: 2px solid black;
@@ -86,9 +93,10 @@
     <div class="boxed">
       <div>
         <div id="chatbox">
-          <p class="botText">
+          <span><img src = "https://cdn.iconscout.com/icon/premium/png-256-thumb/ai-robot-5-1089411.png" alt = "Hello" width = "25"></span>
+          <span><p class="botText">
             <span>Hi! I'm an AI Chatbot. Ask me anything!</span>
-          </p>
+          </p></span>
         </div>
         <div id="userInput">
           <input id="textInput" type="text" name="msg" placeholder="Enter message here..." />
@@ -96,6 +104,7 @@
       </div>
       <script>
         function getBotResponse() {
+          var image = '<img src = "https://cdn.iconscout.com/icon/premium/png-256-thumb/ai-robot-5-1089411.png" alt = "Hello" width = "25">';
           var rawText = $("#textInput").val();
           var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
           $("#textInput").val("");
@@ -104,7 +113,8 @@
             .getElementById("userInput")
             .scrollIntoView({ block: "start", behavior: "smooth" });
           $.get("/get", { msg: rawText }).done(function(data) {
-            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+            var botHtml = image+'<p class="botText"><span>' + data + "</span></p>";
+            
             $("#chatbox").append(botHtml);
             document
               .getElementById("userInput")
