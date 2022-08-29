@@ -9,8 +9,4 @@ This repository contains AI chat bot which uses autoregressive transformer langu
 5. install dependencies
 6. run app.py
 
-![bot](BotV1.png)\
-V1\
 ![bot](BotV2.png)\
-V2\
-Contributed by - [Aditya Srivastava](https://github.com/AdityaSrivastava3107)
