@@ -9,4 +9,9 @@ This repository contains AI chat bot which uses autoregressive transformer langu
 5. install dependencies
 6. run app.py
 
-![bot](BotV2.png)\
+### Deploy on AWS
+Check out how to deploying a GPT-3 flask application using AWS CodePipeline and Elastic Beanstalk [here](https://medium.com/@contact.blessin/deploying-a-gpt-3-flask-application-on-aws-codepipeline-and-elastic-beanstalk-681cd2ece897)
+
+![bot](BotV2.png)
+
+
