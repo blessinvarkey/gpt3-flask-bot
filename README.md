@@ -1,4 +1,4 @@
-# gpt3-flask-chatbot
+# gpt3-flask-bot
 
 This repository contains AI chat bot which uses autoregressive transformer language model GPT3 for interaction. Interactions are saved in gpt3_logs.
 
